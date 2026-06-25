@@ -1,9 +1,0 @@
-{
-  "name": "birthday-surpriser",
-  "version": "1.0.0",
-  "description": "Interactive Custom Birthday Wish Surpriser",
-  "main": "index.html",
-  "scripts": {
-    "start": "npx http-server -p 8081"
-  }
-}
