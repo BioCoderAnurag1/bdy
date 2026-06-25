@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Surprise!</title>
+  <meta name="description" content="Wish you a very Happy Birthday! A premium birthday scrapbook landing page.">
+  <link rel="stylesheet" href="builder.css">
+</head>
+<body>
+  <!-- Kraft Wax-Seal Envelope Intro -->
+  <div class="envelope-container" id="envelope-container">
+    <div class="envelope-wrapper" id="envelope-wrapper">
+      <div class="envelope-flap-top"></div>
+      <button type="button" class="wax-seal-btn" id="wax-seal">★</button>
+      <div class="envelope-flap-bottom"></div>
+    </div>
+  </div>
+
+  <!-- Confetti falling canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Audio Player -->
+  <audio id="bg-song" loop>
+    <source src="asset/hbd.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Floating Audio Mute/Play Toggle -->
+  <button class="sound-toggle-btn" id="sound-toggle" title="Mute/Unmute Music">🔇</button>
+
+  <!-- Section 1: Hero Header -->
+  <header class="hero-header" id="hero" style="background-image: url('photo/IMG_0601-topaz-sharpen-upscale-6x-2.jpg');">
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <div class="hbd-title-container">
+        <!-- SVG top flourish swirl -->
+        <svg class="hbd-flourish-top" viewBox="0 0 100 20">
+          <path d="M0,10 Q25,0 50,10 T100,10 M10,12 C30,4 70,4 90,12 M30,14 Q50,8 70,14" stroke="#e05a26" stroke-width="1.5" fill="none"/>
+        </svg>
+
+        <h1 class="hbd-main-title">HAPPY<br>BIRTHDAY</h1>
+
+        <!-- SVG bottom flourish swirl -->
+        <svg class="hbd-flourish-bottom" viewBox="0 0 100 20">
+          <path d="M0,10 Q25,0 50,10 T100,10 M10,12 C30,4 70,4 90,12 M30,14 Q50,8 70,14" stroke="#e05a26" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="hero-recipient-name">Shristy Raj</div>
+      <div class="hero-dob">18 . 07 . 2026</div>
+
+      <!-- Play Button scrolls to Photo Gallery section -->
+      <button class="hero-play-btn" id="hero-play-btn" title="View Surprise Gallery">▶</button>
+
+      <nav class="hero-nav">
+        <a class="hero-nav-link" data-target="letter-timeline">Your Birthday Message</a>
+        <a class="hero-nav-link" data-target="gallery">Photo Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section 2: Typed Diary Love Letter -->
+  <section class="letter-section" id="letter-timeline">
+    <div class="diary-paper">
+      <div class="diary-content" id="diary-content">
+        <!-- Typewriter writes message slides dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Photo Collage Board -->
+  <section class="collage-section" id="gallery">
+    <div class="collage-header">
+      <h2 class="collage-title">SURPRISE GALLERY</h2>
+      <p class="collage-subtitle">💡 Click any polaroid photo to zoom in and read captions!</p>
+    </div>
+
+    <div class="collage-grid">
+      <!-- 11 Photos from photo folder -->
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/heheheh.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">Unforgettable moments! ❤️</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/unknow.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">The best squad ever! 🌟</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/201A955F-7AF0-4957-8439-DE8D7FFAFAB4-topaz-face-sharpen-text-upscale-6x.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">Blowing candles & making wishes! 🎂</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/20609F09-8686-47FA-BF1D-34BAC50CC0D2-topaz-face-sharpen-text-upscale-6x.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">Silly poses, happy hearts! 🤪</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/2215AF99-ACEB-4258-935F-212455860747-topaz-face-sharpen-text-upscale-6x.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">Cheers to another great year! 🥂</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/2BDDB916-2938-4D02-9ABA-8B6361F3EDC1-topaz-face-sharpen-text-upscale-6x.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">Chasing sunsets and dreams! 🌅</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/37AEC47E-B689-4AA9-82DA-60DBFFB10C57-topaz-face-sharpen-text-upscale-6x.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">Pure happiness captured! ✨</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/5B9E45D3-655E-4A13-910D-21CAC6CA2CEE-topaz-face-sharpen-text-upscale-6x.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">Fun times & laughter! 😂</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/file_000000004dfc71faa2a00bf53356200c.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">Water slide adventures! 💦</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/file_000000009f1071fa9ac809e73b12d78f-topaz-face-face-sharpen-text-upscale-6x.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">A truly special celebration! 🎉</div>
+        </div>
+      </div>
+
+      <div class="collage-item">
+        <div class="collage-card">
+          <img src="photo/IMG_0601-topaz-sharpen-upscale-6x-2.jpg" class="collage-img" alt="Birthday surprise photo" loading="lazy">
+          <div class="collage-caption">Pool party memories! 🏊</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: AE Birthday Message Section -->
+  <section class="wish-message-section" id="message" style="background-image: url('photo/unknow.jpg');">
+    <div class="wish-message-overlay"></div>
+    <div class="wish-message-content">
+      <h2 class="wish-message-text">
+        FROM MANU,<br>
+        I WANT TO WISH YOU A VERY, VERY<br>
+        <span class="highlight">HAPPY BIRTHDAY!</span>
+      </h2>
+      
+      <!-- SVG scroll flourish divider -->
+      <svg class="wish-flourish" viewBox="0 0 100 20">
+        <path d="M10,10 C30,2 70,2 90,10 Q50,18 10,10" stroke="#fdf6e2" stroke-width="1" fill="none"/>
+        <circle cx="50" cy="10" r="2" fill="#fdf6e2"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Section 4: Orange Footer Slogan -->
+  <section class="orange-ribbon">
+    <div class="orange-ribbon-content">
+      <h2 class="slogan-text">PARTY LIKE YOU'RE A KID AGAIN!</h2>
+      <div class="slogan-divider">
+        <span>✦</span>
+        <div class="slogan-circle">AE</div>
+        <span>✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thin Footer strip -->
+  <footer class="footer-bottom">
+    Created by Manu
+  </footer>
+
+  <!-- Fullscreen Lightbox Modal Overlay -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" title="Close Lightbox">&times;</button>
+      <img src="" class="lightbox-img" id="lightbox-img" alt="Enlarged photo">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="landing.js"></script>
+</body>
+</html>
